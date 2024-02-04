@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>u-in-t-wp-bot-d3ploy-nkmods-lyfe-whatsapp-bot-md</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #61dafb;
+    }
+
+    pre {
+      background-color: #2b2b2b;
+      color: #d4d4d4;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+      width: 80vw;
+      max-width: 800px;
+      margin: 10px 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .copy-btn {
+      cursor: pointer;
+      font-size: 12px;
+      color: #61dafb;
+      margin-top: 5px;
+      user-select: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<h1>u-in-t-wp-bot-d3ploy-nkmods-lyfe-whatsapp-bot-md</h1>
+<p>It shows how to deploy the LYFE'S WHATSAPP-BOT-MD in Ubuntu on Termux in just a few steps. The script creator is <a href="https://github.com/NKMODS">@NKMODS</a></p>
+
+<h2>INSTALLATION</h2>
+<pre id="codeBlock1">
+apt update && apt upgrade -y
+apt-get install git -y
+cd
+git clone https://github.com/pvtvpsfiles/u-in-t-wp-bot-d3ploy-nkmods-lyfe-whatsapp-bot-md
+cd u-in-t-wp-bot-d3ploy-nkmods-lyfe-whatsapp-bot-md
+chmod +x setup.sh
+./setup.sh -y
+cd
+rm -rf u-in-t-wp-bot-d3ploy-nkmods-lyfe-whatsapp-bot-md
+</pre>
+<span class="copy-btn" onclick="copyToClipboard('codeBlock1')">Copy</span>
+
+<h1>Start Bot</h1>
+<pre id="codeBlock2">
+cd (bot name)
+</pre>
+<span class="copy-btn" onclick="copyToClipboard('codeBlock2')">Copy</span>
+
+<pre id="codeBlock3">
+npm start
+</pre>
+<span class="copy-btn" onclick="copyToClipboard('codeBlock3')">Copy</span>
+
+<script>
+  function copyToClipboard(id) {
+    const codeBlock = document.getElementById(id);
+    const codeToCopy = codeBlock.textContent;
+    const textarea = document.createElement('textarea');
+    textarea.value = codeToCopy;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
+</script>
+
+</body>
+</html>
